@@ -1,15 +1,15 @@
 module.exports = {
-  title: "Uniswap",
+  title: "Namek",
   tagline: "Documentation and Guides",
   url: "https://docs.uniswap.org/",
   baseUrl: "/",
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "ignore",
   favicon: "img/favicon.png",
-  organizationName: "Uniswap", // Usually your GitHub org/user name.
-  projectName: "Uniswap-docs", // Usually your repo name.
+  organizationName: "Namek", // Usually your GitHub org/user name.
+  projectName: "namek-docs", // Usually your repo name.
   themeConfig: {
-   // hideableSidebar: true,
+    // hideableSidebar: true,
     prism: {
       additionalLanguages: ["solidity"],
     },
@@ -19,9 +19,9 @@ module.exports = {
       appId: "S0IDD0YGLZ"
     },
     navbar: {
-      title: "Uniswap Documentation",
+      title: "Namek Documentation",
       logo: {
-        alt: "Uniswap Unicorn",
+        alt: "Namekku",
         src: "img/uni_dark_icon.svg",
       },
       items: [
@@ -116,11 +116,11 @@ module.exports = {
       {
         docs: {
           id: "versionthree",
-          path: "docs/V3",
+          path: "docs",
           routeBasePath: "/",
-          sidebarPath: require.resolve("./V3sidebars.js"),
+          sidebarPath: require.resolve("./sidebars.js"),
           includeCurrentVersion: true,
-          editUrl: "https://github.com/uniswap/uniswap-docs/tree/main/",
+          editUrl: "https://github.com/namek-finance/namek-docs/tree/main/",
         },
 
         theme: {
@@ -130,26 +130,4 @@ module.exports = {
       },
     ],
   ],
-  plugins: [
-    // [
-    //   "@docusaurus/plugin-content-docs",
-    //   {
-    //     id: "SDK",
-    //     path: "SDK",
-    //     routeBasePath: "/",
-    //     sidebarPath: require.resolve("./sdkSidebar.js"),
-    //   },
-    // ],
-  ], 
-  //   ],
-  //   [
-  //     "@docusaurus/plugin-content-docs",
-  //     {
-  //       id: "versionone",
-  //       path: "docs/V1",
-  //       routeBasePath: "docs/V1",
-  //       sidebarPath: require.resolve("./V1sidebars.js"),
-  //     },
-  //   ],
-  // ],
 };
